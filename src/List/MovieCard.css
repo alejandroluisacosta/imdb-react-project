@@ -1,0 +1,37 @@
+.MovieCard {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.MovieCard__image {
+    margin-right: 1rem;
+    width: 100px;
+}
+
+.MovieCard__id {
+    display: inline-block;
+    margin-right: 0.3rem;
+}
+
+.MovieCard__title {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.MovieCard__year {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.MovieCard__duration {
+    display: inline-block;
+}
+
+.MovieCard__rating {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.MovieCard__voters {
+    display: inline-block;
+}

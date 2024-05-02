@@ -12,9 +12,9 @@ const ListContainer = () => {
                     <button>Filtrar</button>
                 </div>
                 <div>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
+                    <button id="flexDisplay">flex</button>
+                    <button id="gridDisplay">grid</button>
+                    <button>other</button>
                 </div>
             </div>
             <MoviesList/>

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import MovieCard from "./MovieCard";
-import './MovieList.css'
+import MovieCard from "../MovieCard/MovieCard";
+import './MoviesList.css'
 
 const movies = [
     {
@@ -232,22 +232,10 @@ const movies = [
     }
   ];
   
-const flexDisplay = document.getElementById("flexDisplay");
-const gridDisplay = document.getElementById("gridDisplay");
-
-const MoviesList = () => {
-    const [display, setDisplay] = useState("MovieListFlex");
-
-    gridDisplay.addEventListener("click", () => {
-        setDisplay("MovieListGrid");
-    })
-
-    flexDisplay.addEventListener("click", () => {
-        setDisplay("MovieListFlex");
-    })
+const MoviesList = (props) => {
 
     return (
-        <div className={display}>
+        <div className={props.display}>
             {movies.map((movie, index) => 
                 <MovieCard title={movie.title} image={movie.image} year={movie.year} duration={movie.duration} rating={movie.rating} voters={movie.voters} key={movie.id} id={movie.id}/>
             )}

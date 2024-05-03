@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import MovieCard from "../MovieCard/MovieCard";
 import './MoviesList.css'
 
@@ -232,11 +233,25 @@ const movies = [
   ];
 
 const MoviesList = (props) => {
-
+    const [cardClass, setCardClass] = useState('MovieCard');
+    
+    // props.display === 'MovieListFlex' ? 
+    // setCardClass('MovieCard') :
+    // setCardClass('MovieCardGrid');
+    // Por qué re-render infinito
+    
+    useEffect(() => {
+      if (props.display === 'MovieListFlex') {
+          setCardClass('MovieCard');
+      } else {
+          setCardClass('MovieCardGrid');
+      }
+    }, [props.display]);
+    
     return (
         <div className={props.display}>
             {movies.map((movie, index) => 
-                <MovieCard title={movie.title} image={movie.image} year={movie.year} duration={movie.duration} rating={movie.rating} voters={movie.voters} key={movie.id} id={movie.id}/>
+                <MovieCard class={cardClass} title={movie.title} image={movie.image} year={movie.year} duration={movie.duration} rating={movie.rating} voters={movie.voters} key={movie.id} id={movie.id}/>
             )}
         </div>
     )

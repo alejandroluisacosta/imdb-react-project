@@ -1,8 +1,9 @@
+import { useState } from 'react';
 import './MovieCard.css'
 
 const MovieCard = (props) => {
     return (
-        <div className="MovieCard">
+        <div className={props.class}>
             <img className="MovieCard__image"src={props.image} />
             <div>
                 <div>

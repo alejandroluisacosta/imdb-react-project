@@ -1,7 +1,7 @@
 import { useState } from "react";
 import './ListContainer.css'
 import MoviesList from "../MoviesList/MoviesList";
-import MoreToExplore from "../../MoreToExplore/MoreToExplore";
+import MoreToExplore from "../MoreToExplore/MoreToExplore";
 
 const ListContainer = () => {
     
@@ -33,7 +33,7 @@ const ListContainer = () => {
             </div>
             <div className="ListsContainer">
                 <MoviesList display={display}/>
-                <MoreToExplore />
+                <MoreToExplore className="MoreToExplore"/>
             </div>
         </>
     )

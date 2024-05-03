@@ -1,4 +1,5 @@
 import Chart from "../MoreToExploreChart/MoreToExploreChart";
+import './MoreToExplore.css'
 
 const charts = [
     { title: "Películas más taquilleras (EE. UU.)", subtitle: "Del fin de semana pasado", link: "topUSMoviesLastWeekend" },
@@ -14,7 +15,7 @@ const MoreToExplore = () => {
     return (
         <div className="MoreToExplore">
             {charts.map((chart, index) => {
-                return <Chart title={chart.title} subtitle={chart.subtitle} link={chart.link}/>
+                return <Chart title={chart.title} subtitle={chart.subtitle} link={chart.link} key={index}/>
             })}
         </div>
     )

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import MovieCard from "../MovieCard/MovieCard";
 import './MoviesList.css'
 
@@ -231,7 +230,7 @@ const movies = [
       voters: "1.4M"
     }
   ];
-  
+
 const MoviesList = (props) => {
 
     return (

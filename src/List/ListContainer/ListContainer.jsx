@@ -1,5 +1,7 @@
 import { useState } from "react";
+import './ListContainer.css'
 import MoviesList from "../MoviesList/MoviesList";
+import MoreToExplore from "../../MoreToExplore/MoreToExplore";
 
 const ListContainer = () => {
     
@@ -29,7 +31,10 @@ const ListContainer = () => {
                     <button>other</button>
                 </div>
             </div>
-            <MoviesList display={display}/>
+            <div className="ListsContainer">
+                <MoviesList display={display}/>
+                <MoreToExplore />
+            </div>
         </>
     )
 }

@@ -235,16 +235,11 @@ const movies = [
 const MoviesList = (props) => {
     const [cardClass, setCardClass] = useState('MovieCard');
     
-    // props.display === 'MovieListFlex' ? 
-    // setCardClass('MovieCard') :
-    // setCardClass('MovieCardGrid');
-    // Por qué re-render infinito
-    
     useEffect(() => {
       if (props.display === 'MovieListFlex') {
           setCardClass('MovieCard');
       } else {
-          setCardClass('MovieCardGrid');
+          setCardClass('MovieCard--grid');
       }
     }, [props.display]);
     

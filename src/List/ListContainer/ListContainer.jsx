@@ -20,21 +20,21 @@ const ListContainer = () => {
             <h2>Tablas de IMDb</h2>
             <h1>Las 250 mejores películas de IMDb</h1>
             <p>Según la calificación de los votantes habituales de IMDb</p>
-            <div>
-                <div>
+            <div className="ListsContainer">
+            <div className="InfoContainer__buttonsContainer">
+                <div className="InfoContainer__buttonsContainer__filterContainer">
                     <p>250 títulos</p>
                     <button>Filtrar</button>
                 </div>
-                <div>
+                <div className="InfoContainer__buttonsContainer__displayButtonsContainer">
                     <button id="flexDisplay" onClick={clickFlexButtonHandler}>flex</button>
                     <button id="gridDisplay" onClick={clickGridButtonHandler}>grid</button>
                     <button>other</button>
                 </div>
             </div>
-            <div className="ListsContainer">
                 <MoviesList display={display}/>
-                <MoreToExplore className="MoreToExplore"/>
             </div>
+                <MoreToExplore className="MoreToExplore"/>
         </div>
     )
 }

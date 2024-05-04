@@ -3,7 +3,19 @@
     padding: 2rem;
 }
 
-.ListsContainer {
+.InfoContainer__buttonsContainer {
     display: flex;
     justify-content: space-between;
+}
+
+.InfoContainer__buttonsContainer__displayButtonsContainer {
+    margin-bottom: 1.5rem;
+}
+
+.ListsContainer {
+    display: inline-block;
+}
+
+.MoreToExplore {
+    display: inline;
 }

@@ -6,6 +6,6 @@
 .MovieListGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1%;
-    max-width: 65%;
+    gap: 3%;
+    max-width: 60%;
 }

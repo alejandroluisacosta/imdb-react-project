@@ -1,3 +1,8 @@
+.InfoContainer {
+    background-color: white;
+    padding: 2rem;
+}
+
 .ListsContainer {
     display: flex;
     justify-content: space-between;

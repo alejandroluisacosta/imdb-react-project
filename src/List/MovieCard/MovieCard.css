@@ -4,8 +4,9 @@
 }
 
 .MovieCard--grid {
-    margin-bottom: 1rem;
     border: 1px solid black;
+    border-radius: 5px;
+    max-height: 100%;
 }
 
 .MovieCard__image {
@@ -14,30 +15,37 @@
     max-height: 158.31px;
 }
 
-.MovieCard__id {
-    display: inline-block;
-    margin-right: 0.3rem;
+.MovieCard__image--grid {
+    width: 100%;
+    max-height: unset;
+    margin-right: unset;
+}
+
+.MovieCard__info--grid {
+    padding: 1rem;
 }
 
 .MovieCard__title {
-    display: inline-block;
-    margin-right: 1rem;
 }
 
-.MovieCard__year {
-    display: inline-block;
-    margin-right: 1rem;
+.MovieCard__title--grid {
+    height: 10%;
+    margin: 0;
+    margin-bottom: 0.5rem;
 }
 
-.MovieCard__duration {
-    display: inline-block;
+.MovieCard__yearAndDuration {
 }
 
-.MovieCard__rating {
-    display: inline-block;
-    margin-right: 1rem;
+.MovieCard__yearAndDuration--grid {
+    margin: 0;
+    margin-bottom: 0.5rem;
 }
 
-.MovieCard__voters {
-    display: inline-block;
+.MovieCard__ratingAndVoters {
+}
+
+.MovieCard__ratingAndVoters--grid {
+    margin: 0;
+    margin-bottom: 0.5rem;
 }

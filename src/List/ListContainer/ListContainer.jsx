@@ -32,9 +32,9 @@ const ListContainer = () => {
                     <button>other</button>
                 </div>
             </div>
-                <MoviesList display={display}/>
+            <MoviesList display={display}/>
+            <MoreToExplore className="MoreToExplore"/>
             </div>
-                <MoreToExplore className="MoreToExplore"/>
         </div>
     )
 }
